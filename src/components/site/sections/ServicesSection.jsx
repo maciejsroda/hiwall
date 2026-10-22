@@ -14,30 +14,30 @@ export default function ServicesSection() {
           <SectionIntro
             eyebrow="Oferta"
             title="Meble dopasowane do Twojego wnętrza"
-            description="Projektujemy rozwiązania, które porządkują przestrzeń i podkreślają charakter wnętrza."
-          />
+            description="Projektujemy rozwiązania, które porządkują przestrzeń i podkreślają charakter wnętrza." />
+          
         </div>
 
         <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-8 lg:mt-20 lg:gap-10">
-          {SERVICES.map((service, index) => (
-            <Reveal
-              key={service.number}
-              delay={index * 0.08}
-              className={cn("group", index === 1 && "md:mt-14", index === 2 && "md:mt-6")}
-            >
+          {SERVICES.map((service, index) =>
+          <Reveal
+            key={service.number}
+            delay={index * 0.08}
+            className={cn("group", index === 1 && "md:mt-14", index === 2 && "md:mt-6")}>
+            
               <Link
-                to={service.to}
-                search={service.search}
-                className="block focus-visible:outline-none"
-              >
+              to={service.to}
+              search={service.search}
+              className="block focus-visible:outline-none">
+              
                 <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-                  <Image
-                    src={service.image}
-                    alt={service.alt}
-                    className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
-                    originWidth={1200}
-                    originHeight={1500}
-                  />
+                  <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/bc529f7e4_849059130_1650294100125952_1195815505646450953_n.jpg"
+
+                alt={service.alt}
+                className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
+                originWidth={1200}
+                originHeight={1500} />
+                
                   <span className="absolute left-4 top-4 bg-ivory/95 px-3 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-charcoal">
                     {service.number}
                   </span>
@@ -51,15 +51,15 @@ export default function ServicesSection() {
                 <span className="mt-5 inline-flex items-center gap-2 border-b border-oak/60 pb-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-charcoal transition-colors group-hover:border-charcoal">
                   {service.cta}
                   <ArrowRight
-                    className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1"
-                    strokeWidth={1.5}
-                  />
+                  className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1"
+                  strokeWidth={1.5} />
+                
                 </span>
               </Link>
             </Reveal>
-          ))}
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
