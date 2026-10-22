@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
-import ProjectCard from "../ProjectCard";
-import ProjectLightbox from "../ProjectLightbox";
+import ProjectCard from "./ProjectCard";
+import ProjectLightbox from "./ProjectLightbox";
 
 export default function ProjectGrid({ projects, featured = false }) {
   const [activeIndex, setActiveIndex] = useState(null);

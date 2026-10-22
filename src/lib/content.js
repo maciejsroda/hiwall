@@ -1,16 +1,18 @@
+const MEDIA = "https://media.base44.com/images/public/6ada23814ca191b088e6074c";
+
 export const IMAGES = {
-  hero: "/__generating__/62e3bcbe-a3fd-4a11-bcfd-aa64a166fd65.png",
-  detail: "/__generating__/9ce6dfad-7990-4b4e-884c-f1c9f93413a9.png",
-  kitchen: "/__generating__/6d8b7068-01d7-43c6-882f-be1e04f016d8.png",
-  wardrobe: "/__generating__/37331e90-35fb-434b-9dc3-b420a78818f4.png",
-  furniture: "/__generating__/dca6f299-3bd1-401e-af19-b096ce61846b.png",
-  island: "/__generating__/2c860880-f20b-4ac5-946b-b32efd69cf3b.png",
-  dining: "/__generating__/eaaada5d-6564-4777-a08a-4ee24dc38bc5.png",
-  closet: "/__generating__/20259c78-360b-4d9b-9e75-006e4406de85.png",
-  office: "/__generating__/292f44cc-27cb-4d84-8a0c-20a168944d0a.png",
-  wide: "/__generating__/daee57c9-baf3-4edd-af3e-c04a48d6aee1.png",
-  workshop: "/__generating__/1cd671a8-7bf5-45c1-8574-aba9381ea4c1.png",
-  hallway: "/__generating__/15595165-6cd4-4cf9-aa8d-74338f0d8227.png",
+  hero: `${MEDIA}/b7dcf2e72_generated_024e9a74.png`,
+  detail: `${MEDIA}/c61af5d02_generated_80dd20bf.png`,
+  kitchen: `${MEDIA}/6112f8b26_generated_c423a7b6.png`,
+  wardrobe: `${MEDIA}/0b381dcc5_generated_4357670a.png`,
+  furniture: `${MEDIA}/cb4a4bc4a_generated_1c0059e2.png`,
+  island: `${MEDIA}/22427b18d_generated_090da19e.png`,
+  dining: `${MEDIA}/96dc64860_generated_63cd47b7.png`,
+  closet: `${MEDIA}/f9ad19377_generated_cf26e49d.png`,
+  office: `${MEDIA}/54d716454_generated_60f67ba1.png`,
+  wide: `${MEDIA}/40eb676d9_generated_cb0706f7.png`,
+  workshop: `${MEDIA}/db4a58cd2_generated_2818944c.png`,
+  hallway: `${MEDIA}/7d7e79454_generated_c234e517.png`,
 };
 
 export const SERVICES = [

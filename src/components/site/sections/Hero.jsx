@@ -4,7 +4,7 @@ import { Link } from "@tanstack/react-router";
 import { Image } from "@/components/ui/image";
 import { IMAGES } from "@/lib/content";
 import { SITE } from "@/lib/site-config";
-import ButtonLink from "./ButtonLink";
+import ButtonLink from "../ButtonLink";
 
 export default function Hero() {
   const reduceMotion = useReducedMotion();

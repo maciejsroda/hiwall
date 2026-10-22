@@ -1,0 +1,86 @@
+{
+  "name": "Inquiry",
+  "type": "object",
+  "description": "Zapytania wys\u0142ane przez formularz kontaktowy na stronie HiWall.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Imi\u0119 osoby wysy\u0142aj\u0105cej zapytanie"
+    },
+    "email": {
+      "type": "string",
+      "description": "Adres e-mail do kontaktu"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefon (opcjonalnie)"
+    },
+    "project_type": {
+      "type": "string",
+      "description": "Rodzaj projektu"
+    },
+    "location": {
+      "type": "string",
+      "description": "Miejsce realizacji"
+    },
+    "scope": {
+      "type": "string",
+      "description": "Planowany zakres prac lub orientacyjne wymiary"
+    },
+    "message": {
+      "type": "string",
+      "description": "Tre\u015b\u0107 wiadomo\u015bci"
+    },
+    "attachment_uri": {
+      "type": "string",
+      "description": "Prywatny plik z inspiracj\u0105 lub zdj\u0119ciem wn\u0119trza"
+    },
+    "attachment_name": {
+      "type": "string",
+      "description": "Nazwa przes\u0142anego pliku"
+    },
+    "source_path": {
+      "type": "string",
+      "description": "Podstrona, z kt\u00f3rej wys\u0142ano zapytanie"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "nowe",
+        "w kontakcie",
+        "zamkniete"
+      ],
+      "default": "nowe",
+      "description": "Status obs\u0142ugi zapytania"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "project_type",
+    "location",
+    "message"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
