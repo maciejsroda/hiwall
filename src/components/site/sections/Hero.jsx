@@ -10,7 +10,7 @@ export default function Hero() {
   const fade = (delay) => ({
     initial: { opacity: 0, y: 18 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] }
   });
 
   return (
@@ -26,8 +26,8 @@ export default function Hero() {
 
           <motion.h1
             {...fade(0.15)}
-            className="mt-7 max-w-[16ch] text-[2.6rem] font-light leading-[1.04] tracking-[-0.035em] text-charcoal sm:text-[3.4rem] lg:text-[4.35rem] xl:text-[4.9rem]"
-          >
+            className="mt-7 max-w-[16ch] text-[2.6rem] font-light leading-[1.04] tracking-[-0.035em] text-charcoal sm:text-[3.4rem] lg:text-[4.35rem] xl:text-[4.9rem]">
+            
             Meble na wymiar.
             <span className="mt-2 block display-italic text-[0.92em] leading-[1.05] text-charcoal/90">
               Przestrzeń zaprojektowana dla Ciebie.
@@ -44,28 +44,28 @@ export default function Hero() {
             <ButtonLink to="/kontakt">Zapytaj o wycenę</ButtonLink>
             <Link
               to="/realizacje"
-              className="group inline-flex items-center gap-3 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-charcoal"
-            >
+              className="group inline-flex items-center gap-3 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-charcoal">
+              
               Poznaj nasze realizacje
               <ArrowRight
                 className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-                strokeWidth={1.5}
-              />
+                strokeWidth={1.5} />
+              
             </Link>
           </motion.div>
 
           <motion.dl
             {...fade(0.52)}
-            className="mt-14 grid max-w-lg grid-cols-1 gap-x-8 gap-y-4 border-t border-charcoal/10 pt-6 sm:grid-cols-3"
-          >
-            {["Projekt", "Wykonanie", "Montaż"].map((item) => (
-              <div key={item} className="flex items-center gap-3">
+            className="mt-14 grid max-w-lg grid-cols-1 gap-x-8 gap-y-4 border-t border-charcoal/10 pt-6 sm:grid-cols-3">
+            
+            {["Projekt", "Wykonanie", "Montaż"].map((item) =>
+            <div key={item} className="flex items-center gap-3">
                 <span aria-hidden="true" className="h-1 w-1 rounded-full bg-oak" />
                 <dt className="text-[0.7rem] font-medium uppercase tracking-[0.18em] text-graphite">
                   {item}
                 </dt>
               </div>
-            ))}
+            )}
           </motion.dl>
         </div>
 
@@ -74,15 +74,15 @@ export default function Hero() {
             initial={{ scale: 1.06, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-            className="h-full w-full"
-          >
-            <Image
-              src={IMAGES.hero}
-              alt="Nowoczesna kuchnia na wymiar z dębową zabudową i kamiennym blatem wyspy"
-              className="h-full w-full object-cover"
-              originWidth={1536}
-              originHeight={1024}
-            />
+            className="h-full w-full">
+            
+            <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/ba16f2471_792090277_1614687347019961_4250369707302175378_n.jpg"
+
+            alt="Nowoczesna kuchnia na wymiar z dębową zabudową i kamiennym blatem wyspy"
+            className="h-full w-full object-cover"
+            originWidth={1536}
+            originHeight={1024} />
+            
           </motion.div>
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-charcoal/45 to-transparent" />
           <p className="absolute bottom-7 left-6 text-[0.62rem] uppercase tracking-[0.24em] text-ivory/90 md:left-10 lg:left-8">
@@ -90,6 +90,6 @@ export default function Hero() {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
