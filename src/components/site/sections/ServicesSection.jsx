@@ -31,7 +31,7 @@ export default function ServicesSection() {
               className="block focus-visible:outline-none">
               
                 <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-                  <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/bc529f7e4_849059130_1650294100125952_1195815505646450953_n.jpg"
+                  <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/ba16f2471_792090277_1614687347019961_4250369707302175378_n.jpg"
 
                 alt={service.alt}
                 className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
