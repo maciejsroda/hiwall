@@ -72,5 +72,34 @@ export const submitInquiry = createServerFn({ method: "POST" })
       status: "nowe",
     });
 
+    const lines = [
+      "Nowe zapytanie z formularza HiWall",
+      "",
+      `Imię: ${data.name}`,
+      `E-mail: ${data.email}`,
+      data.phone ? `Telefon: ${data.phone}` : null,
+      `Rodzaj projektu: ${data.project_type}`,
+      `Miejsce realizacji: ${data.location}`,
+      data.scope ? `Zakres: ${data.scope}` : null,
+      "",
+      "Wiadomość:",
+      data.message,
+      data.attachment_name ? `Załącznik: ${data.attachment_name} (plik prywatny w panelu)` : null,
+      data.source_path ? `Strona: ${data.source_path}` : null,
+    ].filter(Boolean);
+
+    // Powiadomienie e-mail jest dodatkiem do zapisu — jego błąd nie może
+    // zablokować wysłania formularza.
+    try {
+      await base44.asServiceRole.integrations.Core.SendEmail({
+        to: INQUIRY_NOTIFY_EMAIL,
+        from_name: "HiWall – formularz",
+        subject: `Nowe zapytanie: ${data.project_type} – ${data.name}`,
+        body: lines.join("\n"),
+      });
+    } catch (error) {
+      console.error("Nie udało się wysłać powiadomienia o zapytaniu:", error?.message);
+    }
+
     return { ok: true, id: record.id };
   });
