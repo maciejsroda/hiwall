@@ -7,9 +7,13 @@ import ValuesSection from "@/components/site/sections/ValuesSection";
 import ProcessSection from "@/components/site/sections/ProcessSection";
 import StatementBanner from "@/components/site/sections/StatementBanner";
 import FaqSection from "@/components/site/sections/FaqSection";
+import ContactSection from "@/components/site/ContactSection";
+import StructuredData, { localBusinessSchema } from "@/components/site/StructuredData";
 import { HOME_FAQ, DEMO_PROJECTS } from "@/lib/content";
+import { listProjects } from "@/lib/server-fns";
 
 export const Route = createFileRoute("/_site/")({
+  loader: async () => ({ projects: await listProjects() }),
   head: () => ({
     meta: [
       { title: "HiWall – Kuchnie i Meble na Wymiar Wrocław" },
@@ -32,16 +36,21 @@ export const Route = createFileRoute("/_site/")({
 });
 
 function HomePage() {
+  const { projects } = Route.useLoaderData();
+  const list = projects.length ? projects : DEMO_PROJECTS;
+
   return (
     <>
+      <StructuredData data={localBusinessSchema()} />
       <Hero />
       <BrandIntro />
       <ServicesSection />
-      <PortfolioSection projects={DEMO_PROJECTS} />
+      <PortfolioSection projects={list} />
       <ValuesSection />
       <ProcessSection />
       <StatementBanner />
       <FaqSection items={HOME_FAQ} />
+      <ContactSection />
     </>
   );
 }

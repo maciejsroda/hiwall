@@ -34,16 +34,22 @@ function ContactPage() {
             <h2 className="eyebrow text-charcoal">Obszar działania</h2>
             <p className="mt-3 text-[0.95rem] leading-relaxed text-graphite">{SITE.area}</p>
           </div>
+          {isFilled(SITE.phone) ? (
+            <div className="border-t border-charcoal/10 pt-5">
+              <h2 className="eyebrow text-charcoal">Telefon</h2>
+              <p className="mt-3 text-[0.95rem] leading-relaxed text-graphite">{SITE.phone}</p>
+            </div>
+          ) : null}
+          {isFilled(SITE.email) ? (
+            <div className="border-t border-charcoal/10 pt-5">
+              <h2 className="eyebrow text-charcoal">E-mail</h2>
+              <p className="mt-3 break-words text-[0.95rem] leading-relaxed text-graphite">{SITE.email}</p>
+            </div>
+          ) : null}
           <div className="border-t border-charcoal/10 pt-5">
-            <h2 className="eyebrow text-charcoal">Telefon</h2>
+            <h2 className="eyebrow text-charcoal">Zapytanie</h2>
             <p className="mt-3 text-[0.95rem] leading-relaxed text-graphite">
-              {isFilled(SITE.phone) ? SITE.phone : "Numer zostanie uzupełniony przez firmę."}
-            </p>
-          </div>
-          <div className="border-t border-charcoal/10 pt-5">
-            <h2 className="eyebrow text-charcoal">E-mail</h2>
-            <p className="mt-3 break-words text-[0.95rem] leading-relaxed text-graphite">
-              {isFilled(SITE.email) ? SITE.email : "Adres zostanie uzupełniony przez firmę."}
+              Wypełnij formularz — to najszybsza droga, aby opisać projekt i otrzymać odpowiedź.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { Check, Loader2, Paperclip, ArrowRight } from "lucide-react";
 import { base44 } from "@/api/base44Client";
@@ -42,11 +42,6 @@ export default function InquiryForm() {
   const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const started = useRef(false);
-
-  useEffect(() => {
-    if (status !== "success") return;
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [status]);
 
   const update = (key, value) => {
     setValues((current) => ({ ...current, [key]: value }));
