@@ -85,7 +85,7 @@ export default function Hero() {
             
           </motion.div>
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-charcoal/45 to-transparent" />
-          <p className="absolute bottom-7 left-6 text-[0.62rem] uppercase tracking-[0.24em] text-ivory/90 md:left-10 lg:left-8">dąb · BIEL · matowe fronty
+          <p className="absolute bottom-7 left-6 text-[0.62rem] uppercase tracking-[0.24em] text-ivory/90 md:left-10 lg:left-8">dąb · BIEL · matowe akrylowe fronty
 
           </p>
         </div>
