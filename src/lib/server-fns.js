@@ -26,6 +26,9 @@ export const listProjects = createServerFn({ method: "GET" }).handler(async ({ c
   }));
 });
 
+/** Adres, na który trafiają powiadomienia o nowych zapytaniach z formularza. */
+const INQUIRY_NOTIFY_EMAIL = "maciejsroda@gmail.com";
+
 const inquirySchema = z.object({
   name: z.string().trim().min(2, "Podaj imię.").max(120),
   email: z.string().trim().email("Podaj poprawny adres e-mail.").max(200),
