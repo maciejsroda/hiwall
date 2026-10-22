@@ -1,13 +1,7 @@
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Reveal({ children, delay = 0, y = 26, className, as = "div" }) {
-  const reduceMotion = useReducedMotion();
   const MotionTag = motion[as] ?? motion.div;
-
-  if (reduceMotion) {
-    const Tag = as;
-    return <Tag className={className}>{children}</Tag>;
-  }
 
   return (
     <MotionTag

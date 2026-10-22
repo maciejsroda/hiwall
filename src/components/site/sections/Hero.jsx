@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Image } from "@/components/ui/image";
@@ -7,10 +7,8 @@ import { SITE } from "@/lib/site-config";
 import ButtonLink from "../ButtonLink";
 
 export default function Hero() {
-  const reduceMotion = useReducedMotion();
-
   const fade = (delay) => ({
-    initial: reduceMotion ? false : { opacity: 0, y: 18 },
+    initial: { opacity: 0, y: 18 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] },
   });
@@ -73,7 +71,7 @@ export default function Hero() {
 
         <div className="relative min-h-[62vh] overflow-hidden bg-sand lg:min-h-[640px]">
           <motion.div
-            initial={reduceMotion ? false : { scale: 1.06, opacity: 0 }}
+            initial={{ scale: 1.06, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="h-full w-full"

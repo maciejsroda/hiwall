@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { Check, Loader2, Paperclip, ArrowRight } from "lucide-react";
 import { base44 } from "@/api/base44Client";
@@ -42,6 +42,12 @@ export default function InquiryForm() {
   const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const started = useRef(false);
+  const confirmationRef = useRef(null);
+
+  useEffect(() => {
+    if (status !== "success") return;
+    confirmationRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [status]);
 
   const update = (key, value) => {
     setValues((current) => ({ ...current, [key]: value }));
@@ -109,7 +115,10 @@ export default function InquiryForm() {
 
   if (status === "success") {
     return (
-      <div className="flex h-full flex-col justify-center bg-surface px-6 py-14 md:px-10 lg:py-16">
+      <div
+        ref={confirmationRef}
+        className="flex h-full flex-col justify-center bg-surface px-6 py-14 md:px-10 lg:py-16"
+      >
         <span className="flex h-12 w-12 items-center justify-center rounded-full bg-oak/15">
           <Check className="h-5 w-5 text-charcoal" strokeWidth={1.5} />
         </span>
