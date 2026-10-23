@@ -11,7 +11,7 @@ const [kitchenService, wardrobeService, furnitureService] = SERVICES;
 
 const imageClass = "h-full w-full object-cover";
 const numberClass =
-  "absolute left-4 top-4 bg-ivory/95 px-3 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-charcoal";
+"absolute left-4 top-4 bg-ivory/95 px-3 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-charcoal";
 const titleClass = "mt-6 text-[1.32rem] font-normal tracking-[-0.01em] text-charcoal";
 const textClass = "mt-3 text-[0.95rem] leading-relaxed text-graphite";
 
@@ -25,8 +25,8 @@ export default function ServicesSection() {
           <SectionIntro
             eyebrow="Oferta"
             title="Meble dopasowane do Twojego wnętrza"
-            description="Projektujemy rozwiązania, które porządkują przestrzeń i podkreślają charakter wnętrza."
-          />
+            description="Projektujemy rozwiązania, które porządkują przestrzeń i podkreślają charakter wnętrza." />
+          
         </div>
 
         <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-8 lg:mt-20 lg:gap-10">
@@ -37,8 +37,8 @@ export default function ServicesSection() {
                 alt="Kuchnia na wymiar z otwartymi dębowymi półkami i zabudowanym piekarnikiem"
                 className={imageClass}
                 originWidth={1200}
-                originHeight={1500}
-              />
+                originHeight={1500} />
+              
               <span className={numberClass}>{kitchenService.number}</span>
             </div>
             <h3 className={titleClass}>{kitchenService.title}</h3>
@@ -52,8 +52,8 @@ export default function ServicesSection() {
                 alt="Garderoba na wymiar z białą zabudową do sufitu"
                 className={imageClass}
                 originWidth={1200}
-                originHeight={1500}
-              />
+                originHeight={1500} />
+              
               <span className={numberClass}>{wardrobeService.number}</span>
             </div>
             <h3 className={titleClass}>{wardrobeService.title}</h3>
@@ -62,13 +62,13 @@ export default function ServicesSection() {
 
           <Reveal delay={0.16} className="md:mt-6">
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-              <Image
-                src={IMAGES.service_furniture}
-                alt="Meble na wymiar — łóżko piętrowe z biurkiem i szafą"
-                className={imageClass}
-                originWidth={1200}
-                originHeight={1500}
-              />
+              <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/d530d06f1_738678122_1558698419285521_8412311436602249127_n.jpg"
+
+              alt="Meble na wymiar — łóżko piętrowe z biurkiem i szafą"
+              className={imageClass}
+              originWidth={1200}
+              originHeight={1500} />
+              
               <span className={numberClass}>{furnitureService.number}</span>
             </div>
             <h3 className={titleClass}>{furnitureService.title}</h3>
@@ -76,23 +76,23 @@ export default function ServicesSection() {
           </Reveal>
         </div>
 
-        {facebook ? (
-          <div className="mt-16 flex flex-col gap-5 border-t border-charcoal/10 pt-8 sm:flex-row sm:items-center sm:justify-between lg:mt-20">
+        {facebook ?
+        <div className="mt-16 flex flex-col gap-5 border-t border-charcoal/10 pt-8 sm:flex-row sm:items-center sm:justify-between lg:mt-20">
             <p className="max-w-2xl text-[0.95rem] leading-relaxed text-graphite">
               Wszystkie najnowsze realizacje znajdziesz na naszych profilach w social mediach.
             </p>
             <a
-              href={facebook.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-fit items-center gap-3 border border-charcoal/15 px-5 py-3 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-charcoal transition-colors hover:border-charcoal/50 hover:bg-charcoal/5"
-            >
+            href={facebook.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit items-center gap-3 border border-charcoal/15 px-5 py-3 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-charcoal transition-colors hover:border-charcoal/50 hover:bg-charcoal/5">
+            
               <Facebook className="h-4 w-4 text-oak" strokeWidth={1.5} />
               Facebook
             </a>
-          </div>
-        ) : null}
+          </div> :
+        null}
       </div>
-    </section>
-  );
+    </section>);
+
 }
