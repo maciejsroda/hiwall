@@ -124,11 +124,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-charcoal/10 pt-6 text-[0.7rem] tracking-[0.06em] text-graphite/70 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {year} {SITE.name}
-            {isFilled(SITE.legal.company) ? ` · ${SITE.legal.company}` : ""}
-            {isFilled(SITE.legal.nip) ? ` · NIP ${SITE.legal.nip}` : ""}
-          </p>
+          <p>© {year} {SITE.name}</p>
           <nav aria-label="Linki prawne" className="flex gap-6">
             <Link to="/polityka-prywatnosci" className="transition-colors hover:text-charcoal">
               Polityka prywatności
