@@ -31,12 +31,12 @@ export default function BrandIntro() {
             <figure className="relative">
               <div className="absolute -left-5 -top-5 hidden h-32 w-32 border-l border-t border-oak/40 lg:block" />
               <div className="relative aspect-[4/3] overflow-hidden bg-sand">
-                <Image
-                  src={IMAGES.home_brand}
-                  alt="Front meblowy w terakocie z mosiężnym uchwytem"
-                  className="h-full w-full object-cover"
-                  originWidth={1400}
-                  originHeight={1050} />
+                <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/c61af5d02_generated_80dd20bf.png"
+
+                alt="Front meblowy w terakocie z mosiężnym uchwytem"
+                className="h-full w-full object-cover"
+                originWidth={1400}
+                originHeight={1050} />
                 
               </div>
               <figcaption className="mt-4 flex items-center justify-between text-[0.68rem] uppercase tracking-[0.18em] text-graphite/70">
