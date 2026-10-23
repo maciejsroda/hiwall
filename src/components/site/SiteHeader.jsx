@@ -56,7 +56,7 @@ export default function SiteHeader() {
         )}
       >
         <div className="mx-auto flex h-[74px] w-full max-w-[1500px] items-center justify-between px-6 md:px-10 lg:h-[92px] lg:px-16">
-          <Link to="/" aria-label="HiWall — strona główna" className="flex flex-col gap-1">
+          <Link to="/" aria-label="HiWall — strona główna" className="flex flex-col items-start gap-1">
             <Wordmark />
             <span className="hidden text-[0.58rem] font-medium uppercase tracking-[0.28em] text-graphite/70 sm:block">
               Meble na wymiar · Wrocław

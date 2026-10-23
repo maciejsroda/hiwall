@@ -11,10 +11,10 @@ export default function Wordmark({ className }) {
     <Image
       src={IMAGES.logo}
       alt="HiWall"
-      className={cn("h-7 w-auto object-contain md:h-8", className)}
+      className={cn("h-7 w-auto object-contain object-left md:h-8", className)}
       fittingType="fit"
-      originWidth={480}
-      originHeight={120}
+      originWidth={854}
+      originHeight={262}
     />
   );
 }
