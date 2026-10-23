@@ -32,12 +32,12 @@ export default function ServicesSection() {
         <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-8 lg:mt-20 lg:gap-10">
           <Reveal>
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-              <Image
-                src={IMAGES.service_kitchen}
-                alt="Kuchnia na wymiar z otwartymi dębowymi półkami i zabudowanym piekarnikiem"
-                className={imageClass}
-                originWidth={1200}
-                originHeight={1500} />
+              <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/bc529f7e4_849059130_1650294100125952_1195815505646450953_n.jpg"
+
+              alt="Kuchnia na wymiar z otwartymi dębowymi półkami i zabudowanym piekarnikiem"
+              className={imageClass}
+              originWidth={1200}
+              originHeight={1500} />
               
               <span className={numberClass}>{kitchenService.number}</span>
             </div>
@@ -47,12 +47,12 @@ export default function ServicesSection() {
 
           <Reveal delay={0.08} className="md:mt-14">
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-              <Image
-                src={IMAGES.service_wardrobe}
-                alt="Garderoba na wymiar z białą zabudową do sufitu"
-                className={imageClass}
-                originWidth={1200}
-                originHeight={1500} />
+              <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/326a30c99_574345839_1362488268906538_5080107212770132872_n2.jpg"
+
+              alt="Garderoba na wymiar z białą zabudową do sufitu"
+              className={imageClass}
+              originWidth={1200}
+              originHeight={1500} />
               
               <span className={numberClass}>{wardrobeService.number}</span>
             </div>
