@@ -3,8 +3,8 @@
  * Dzięki temu podmiana jednego zdjęcia nie zmienia pozostałych.
  */
 export const IMAGES = {
-  // Logo marki — przycięty znak na przezroczystym tle (podmień na docelowy plik logo)
-  logo: "https://base44.app/api/apps/6ada23814ca191b088e6074c/files/mp/public/6ada23814ca191b088e6074c/dfc3285bc_hiwall-logo-wordmark.png",
+  // Logo marki — docelowy plik logo (podmień tutaj, aby zmienić logo w całym serwisie)
+  logo: "https://media.base44.com/images/public/6ada23814ca191b088e6074c/b020884a3_logo.webp",
 
   // Strona główna
   home_hero:

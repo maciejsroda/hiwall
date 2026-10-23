@@ -13,8 +13,8 @@ export default function Wordmark({ className }) {
       alt="HiWall"
       className={cn("h-7 w-auto object-contain object-left md:h-8", className)}
       fittingType="fit"
-      originWidth={854}
-      originHeight={262}
+      originWidth={1964}
+      originHeight={555}
     />
   );
 }
