@@ -115,11 +115,11 @@ function PrivacyPage() {
           )}
         </div>
 
-        <p className="mt-14 border-t border-charcoal/10 pt-6 text-[0.75rem] leading-relaxed text-graphite/60 hidden">
-          Dokument wymaga uzupełnienia danych administratora (nazwa firmy, adres,
-          NIP) oraz weryfikacji zgodnie z rzeczywistym sposobem prowadzenia
-          działalności i wdrożonymi narzędziami.
-        </p>
+        
+
+
+
+        
       </div>
     </section>);
 
