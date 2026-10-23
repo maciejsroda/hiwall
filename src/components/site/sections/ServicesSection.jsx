@@ -70,12 +70,12 @@ export default function ServicesSection() {
               className={linkClass}>
               
               <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-                <Image
-                  src={IMAGES.service_wardrobe}
-                  alt="Szafa na wymiar z frontami w okleinie dębowej w sypialni"
-                  className={imageClass}
-                  originWidth={1200}
-                  originHeight={1500} />
+                <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/1bd5edc43_73286c9b-0afe-4a94-8a0e-cc191d5ebac6.jpeg"
+
+                alt="Szafa na wymiar z frontami w okleinie dębowej w sypialni"
+                className={imageClass}
+                originWidth={1200}
+                originHeight={1500} />
                 
                 <span className={numberClass}>{wardrobeService.number}</span>
               </div>
