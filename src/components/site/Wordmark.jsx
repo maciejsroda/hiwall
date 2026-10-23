@@ -1,22 +1,20 @@
+import { Image } from "@/components/ui/image";
+import { IMAGES } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
-export default function Wordmark({ className, tone = "dark" }) {
+/**
+ * Logo marki pokazywane jako obraz. Podmiana pliku (IMAGES.logo w
+ * src/lib/content.js) wystarcza, aby zaktualizować logo w całym serwisie.
+ */
+export default function Wordmark({ className }) {
   return (
-    <span
-      className={cn(
-        "font-heading text-[1.3rem] font-semibold leading-none tracking-[-0.02em]",
-        tone === "light" ? "text-ivory" : "text-charcoal",
-        className
-      )}
-    >
-      HiWall
-      <span
-        aria-hidden="true"
-        className={cn(
-          "ml-[3px] inline-block h-[5px] w-[5px] rounded-full align-baseline",
-          tone === "light" ? "bg-oak" : "bg-oak"
-        )}
-      />
-    </span>
+    <Image
+      src={IMAGES.logo}
+      alt="HiWall"
+      className={cn("h-7 w-auto object-contain md:h-8", className)}
+      fittingType="fit"
+      originWidth={480}
+      originHeight={120}
+    />
   );
 }

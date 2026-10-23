@@ -10,10 +10,10 @@ export const SITE = {
   area: "Wrocław i okolice",
   url: "", // np. "https://hiwall.pl" – uzupełnić po podłączeniu domeny (canonical, sitemap)
   phone: "",
-  email: "",
+  email: "meble@hiwall.pl",
   address: "",
   hours: "",
-  social: [],
+  social: [{ label: "Facebook", href: "https://www.facebook.com/hiwall.meble" }],
   legal: {
     company: "",
     nip: "",

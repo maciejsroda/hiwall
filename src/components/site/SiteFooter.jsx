@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { SITE, NAV, isFilled, telHref } from "@/lib/site-config";
+import SocialIcon from "./SocialIcon";
 import Wordmark from "./Wordmark";
 
 export default function SiteFooter() {
@@ -18,6 +19,24 @@ export default function SiteFooter() {
               dopasowane do wnętrza, potrzeb i sposobu życia.
             </p>
             <p className="eyebrow mt-6 text-graphite/60">{SITE.area}</p>
+
+            {SITE.social.length ? (
+              <ul className="mt-6 flex items-center gap-3">
+                {SITE.social.map((item) => (
+                  <li key={item.href}>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={item.label}
+                      className="flex h-10 w-10 items-center justify-center border border-charcoal/15 text-charcoal transition-colors hover:border-charcoal/50 hover:bg-charcoal/5"
+                    >
+                      <SocialIcon label={item.label} className="h-4 w-4" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </div>
 
           <nav aria-label="Usługi">

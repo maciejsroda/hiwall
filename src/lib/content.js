@@ -3,6 +3,9 @@
  * Dzięki temu podmiana jednego zdjęcia nie zmienia pozostałych.
  */
 export const IMAGES = {
+  // Logo marki — podmień na docelowy plik logo
+  logo: "https://media.base44.com/images/public/6ada23814ca191b088e6074c/f3d5a190c_generated_image.png",
+
   // Strona główna
   home_hero:
     "https://media.base44.com/images/public/6ada23814ca191b088e6074c/ba16f2471_792090277_1614687347019961_4250369707302175378_n.jpg",
@@ -60,25 +63,18 @@ export const SERVICES = [
     title: "Kuchnie na wymiar",
     description:
       "Przemyślane układy, dopasowana zabudowa i estetyka, która współgra z całym wnętrzem. Kuchnie projektowane z myślą o komforcie codziennego użytkowania.",
-    cta: "Poznaj kuchnie na wymiar",
-    to: "/kuchnie-na-wymiar",
   },
   {
     number: "02",
     title: "Szafy i zabudowy",
     description:
       "Indywidualne zabudowy pozwalające lepiej wykorzystać dostępną przestrzeń. Rozwiązania dopasowane do wymiarów pomieszczenia i potrzeb domowników.",
-    cta: "Zobacz możliwości",
-    to: "/realizacje",
-    search: { kategoria: "Szafy i zabudowy" },
   },
   {
     number: "03",
     title: "Meble na wymiar",
     description:
       "Meble tworzone z myślą o konkretnej przestrzeni, funkcji i estetyce. Rozwiązania, które pomagają zachować spójny charakter wnętrza.",
-    cta: "Porozmawiajmy o projekcie",
-    to: "/meble-na-wymiar",
   },
 ];
 

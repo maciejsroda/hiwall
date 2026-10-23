@@ -31,6 +31,7 @@ export function localBusinessSchema() {
   if (SITE.url) schema.url = SITE.url;
   if (SITE.phone) schema.telephone = SITE.phone;
   if (SITE.email) schema.email = SITE.email;
+  if (SITE.social.length) schema.sameAs = SITE.social.map((item) => item.href);
   if (SITE.address) {
     schema.address = { "@type": "PostalAddress", streetAddress: SITE.address, addressLocality: SITE.city, addressCountry: "PL" };
   }
