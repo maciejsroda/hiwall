@@ -11,12 +11,12 @@ export const SITE = {
   url: "", // np. "https://hiwall.pl" – uzupełnić po podłączeniu domeny (canonical, sitemap)
   phone: "+48 506 169 181",
   email: "meble@hiwall.pl",
-  address: "",
+  address: "ul. Swojczycka 119, 51-502 Wrocław",
   hours: "",
   social: [{ label: "Facebook", href: "https://www.facebook.com/hiwall.meble" }],
   legal: {
-    company: "",
-    nip: "",
+    company: "MSD",
+    nip: "7712721834",
     regon: "",
   },
 };

@@ -20,8 +20,8 @@ const SECTIONS = [
 {
   title: "1. Administrator danych",
   body: [
-  "Administratorem danych osobowych przekazywanych przez formularz kontaktowy jest HiWall — dane firmy (nazwa, adres, NIP) zostaną uzupełnione przez właściciela.",
-  "W sprawach dotyczących danych osobowych można kontaktować się przez formularz kontaktowy dostępny na stronie."]
+  `Administratorem danych osobowych przekazywanych przez formularz kontaktowy jest ${SITE.legal.company}, ${SITE.address}, NIP ${SITE.legal.nip}.`,
+  `W sprawach dotyczących danych osobowych można kontaktować się telefonicznie pod numerem ${SITE.phone} lub e-mailem na adres ${SITE.email}.`]
 
 },
 {
@@ -115,11 +115,6 @@ function PrivacyPage() {
           )}
         </div>
 
-        
-
-
-
-        
       </div>
     </section>);
 
