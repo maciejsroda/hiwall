@@ -4,7 +4,7 @@
  */
 export const IMAGES = {
   // Logo marki — docelowy plik logo (podmień tutaj, aby zmienić logo w całym serwisie)
-  logo: "https://media.base44.com/images/public/6ada23814ca191b088e6074c/b020884a3_logo.webp",
+  logo: "https://media.base44.com/images/public/6ada23814ca191b088e6074c/0f0c6ee41_logo.webp",
 
   // Strona główna
   home_hero:
