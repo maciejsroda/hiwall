@@ -12,13 +12,13 @@ const [kitchenService, wardrobeService, furnitureService] = SERVICES;
 
 const linkClass = "block focus-visible:outline-none";
 const imageClass =
-  "h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]";
+"h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]";
 const numberClass =
-  "absolute left-4 top-4 bg-ivory/95 px-3 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-charcoal";
+"absolute left-4 top-4 bg-ivory/95 px-3 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-charcoal";
 const titleClass = "mt-6 text-[1.32rem] font-normal tracking-[-0.01em] text-charcoal";
 const textClass = "mt-3 text-[0.95rem] leading-relaxed text-graphite";
 const ctaClass =
-  "mt-5 inline-flex items-center gap-2 border-b border-oak/60 pb-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-charcoal transition-colors group-hover:border-charcoal";
+"mt-5 inline-flex items-center gap-2 border-b border-oak/60 pb-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-charcoal transition-colors group-hover:border-charcoal";
 
 function CardCta({ label }) {
   return (
@@ -26,10 +26,10 @@ function CardCta({ label }) {
       {label}
       <ArrowRight
         className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1"
-        strokeWidth={1.5}
-      />
-    </span>
-  );
+        strokeWidth={1.5} />
+      
+    </span>);
+
 }
 
 export default function ServicesSection() {
@@ -40,21 +40,21 @@ export default function ServicesSection() {
           <SectionIntro
             eyebrow="Oferta"
             title="Meble dopasowane do Twojego wnętrza"
-            description="Projektujemy rozwiązania, które porządkują przestrzeń i podkreślają charakter wnętrza."
-          />
+            description="Projektujemy rozwiązania, które porządkują przestrzeń i podkreślają charakter wnętrza." />
+          
         </div>
 
         <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-8 lg:mt-20 lg:gap-10">
           <Reveal className="group">
             <Link to={kitchenService.to} className={linkClass}>
               <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-                <Image
-                  src={IMAGES.service_kitchen}
-                  alt="Kuchnia na wymiar z zabudową do sufitu i kamiennym blatem"
-                  className={imageClass}
-                  originWidth={1200}
-                  originHeight={1500}
-                />
+                <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/bc529f7e4_849059130_1650294100125952_1195815505646450953_n.jpg"
+
+                alt="Kuchnia na wymiar z zabudową do sufitu i kamiennym blatem"
+                className={imageClass}
+                originWidth={1200}
+                originHeight={1500} />
+                
                 <span className={numberClass}>{kitchenService.number}</span>
               </div>
               <h3 className={titleClass}>{kitchenService.title}</h3>
@@ -67,16 +67,16 @@ export default function ServicesSection() {
             <Link
               to={wardrobeService.to}
               search={wardrobeService.search}
-              className={linkClass}
-            >
+              className={linkClass}>
+              
               <div className="relative aspect-[4/5] overflow-hidden bg-sand">
                 <Image
                   src={IMAGES.service_wardrobe}
                   alt="Szafa na wymiar z frontami w okleinie dębowej w sypialni"
                   className={imageClass}
                   originWidth={1200}
-                  originHeight={1500}
-                />
+                  originHeight={1500} />
+                
                 <span className={numberClass}>{wardrobeService.number}</span>
               </div>
               <h3 className={titleClass}>{wardrobeService.title}</h3>
@@ -93,8 +93,8 @@ export default function ServicesSection() {
                   alt="Meble na wymiar — zabudowa z otwartymi półkami w salonie"
                   className={imageClass}
                   originWidth={1200}
-                  originHeight={1500}
-                />
+                  originHeight={1500} />
+                
                 <span className={numberClass}>{furnitureService.number}</span>
               </div>
               <h3 className={titleClass}>{furnitureService.title}</h3>
@@ -104,6 +104,6 @@ export default function ServicesSection() {
           </Reveal>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
