@@ -76,7 +76,7 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="h-full w-full">
             
-            <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/ba16f2471_792090277_1614687347019961_4250369707302175378_n.jpg"
+            <Image src={IMAGES.home_hero}
 
             alt="Nowoczesna kuchnia na wymiar z dębową zabudową i kamiennym blatem wyspy"
             className="h-full w-full object-cover"

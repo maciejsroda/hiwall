@@ -30,7 +30,7 @@ function AboutPage() {
         eyebrow="Marka · HiWall"
         title="Meble, które powstają wokół Twojego wnętrza."
         description="HiWall to kuchnie i meble na wymiar tworzone dla wnętrz we Wrocławiu i okolicach. Pracujemy tak, aby efekt był spójny z przestrzenią, a nie tylko dobrze wyglądał na zdjęciu."
-        image={IMAGES.hallway}
+        image={IMAGES.ofirmie_hero}
         imageAlt="Zabudowa meblowa na wymiar w przedpokoju z siedziskiem i miejscem na obuwie"
       />
 
@@ -70,7 +70,7 @@ function AboutPage() {
             <figure>
               <div className="aspect-[4/3] overflow-hidden bg-sand">
                 <Image
-                  src={IMAGES.detail}
+                  src={IMAGES.ofirmie_story}
                   alt="Detal połączenia frontów meblowych w okleinie dębowej"
                   className="h-full w-full object-cover"
                   originWidth={1400}

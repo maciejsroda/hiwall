@@ -32,7 +32,7 @@ export default function BrandIntro() {
               <div className="absolute -left-5 -top-5 hidden h-32 w-32 border-l border-t border-oak/40 lg:block" />
               <div className="relative aspect-[4/3] overflow-hidden bg-sand">
                 <Image
-                  src={IMAGES.detail}
+                  src={IMAGES.home_brand}
                   alt="Detal meblowy — precyzyjne połączenie frontów w okleinie dębowej"
                   className="h-full w-full object-cover"
                   originWidth={1400}

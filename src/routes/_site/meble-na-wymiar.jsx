@@ -66,7 +66,7 @@ function FurniturePage() {
         eyebrow="Meble na wymiar · Wrocław"
         title="Meble na wymiar we Wrocławiu"
         description="Szafy, garderoby, zabudowy i meble, które powstają pod wymiary konkretnego wnętrza — tak, aby przestrzeń była uporządkowana i spójna."
-        image={IMAGES.wardrobe}
+        image={IMAGES.meble_hero}
         imageAlt="Szafa na wymiar z frontami w okleinie dębowej, zabudowana do sufitu"
       />
 
@@ -127,7 +127,7 @@ function FurniturePage() {
             <figure>
               <div className="aspect-[4/3] overflow-hidden bg-sand">
                 <Image
-                  src={IMAGES.workshop}
+                  src={IMAGES.meble_story}
                   alt="Detale warsztatowe — próbki okleiny dębowej i narzędzia stolarskie"
                   className="h-full w-full object-cover"
                   originWidth={1200}

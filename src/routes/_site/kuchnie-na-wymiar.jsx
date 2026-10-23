@@ -61,7 +61,7 @@ function KitchensPage() {
         eyebrow="Kuchnie na wymiar · Wrocław"
         title="Kuchnie na wymiar we Wrocławiu"
         description="Projektujemy kuchnie dopasowane do pomieszczenia, sposobu gotowania i charakteru wnętrza — od układu, przez materiały, po ostatni detal wykończenia."
-        image={IMAGES.kitchen}
+        image={IMAGES.kuchnie_hero}
         imageAlt="Kuchnia na wymiar z zabudową do sufitu, kamiennym blatem i dębową niszą"
       />
 
@@ -88,7 +88,7 @@ function KitchensPage() {
             <figure>
               <div className="aspect-[5/4] overflow-hidden bg-sand">
                 <Image
-                  src={IMAGES.island}
+                  src={IMAGES.kuchnie_story}
                   alt="Wyspa kuchenna z kamiennym blatem i dębową zabudową"
                   className="h-full w-full object-cover"
                   originWidth={1200}

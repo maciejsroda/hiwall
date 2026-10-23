@@ -43,7 +43,7 @@ function ProjectsPage() {
         eyebrow="Portfolio · Wrocław i okolice"
         title="Realizacje, które mówią same za siebie."
         description="Poznaj przykłady rozwiązań, w których estetyka spotyka się z funkcjonalnością."
-        image={IMAGES.wide}
+        image={IMAGES.realizacje_hero}
         imageAlt="Wnętrze z zabudową meblową na wymiar w naturalnym dębie"
       />
 

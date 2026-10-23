@@ -8,7 +8,7 @@ export default function StatementBanner() {
     <section className="relative overflow-hidden bg-charcoal">
       <div className="absolute inset-0">
         <Image
-          src={IMAGES.wide}
+          src={IMAGES.home_statement}
           alt="Wnętrze dzienne z zabudową meblową na wymiar w naturalnym dębie"
           className="h-full w-full object-cover"
           originWidth={2000}
