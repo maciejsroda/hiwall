@@ -62,7 +62,7 @@ function KitchensPage() {
         title="Kuchnie na wymiar we Wrocławiu"
         description="Projektujemy kuchnie dopasowane do pomieszczenia, sposobu gotowania i charakteru wnętrza — od układu, przez materiały, po ostatni detal wykończenia."
         image={IMAGES.kuchnie_hero}
-        imageAlt="Kuchnia na wymiar z otwartymi półkami w dębie i zabudowanym piekarnikiem"
+        imageAlt="Kuchnia na wymiar w szałwiowej zieleni z dębowymi szafkami, marmurowym pasem i zlewem pod oknem"
       />
 
       <section className="bg-ivory py-20 lg:py-28">

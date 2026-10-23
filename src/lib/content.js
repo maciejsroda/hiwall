@@ -22,7 +22,7 @@ export const IMAGES = {
 
   // Kuchnie na wymiar
   kuchnie_hero:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/17d0bd563_655127723_1469270118228352_4457180546474638118_n.jpg",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/a12210257_697120413_1513825807106116_4691554920030265102_n__1_.jpg",
   kuchnie_story:
     "https://media.base44.com/images/public/6ada23814ca191b088e6074c/1088bc40a_849059130_1650294100125952_1195815505646450953_n.jpg",
 
