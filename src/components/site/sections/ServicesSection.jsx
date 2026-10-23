@@ -88,12 +88,12 @@ export default function ServicesSection() {
           <Reveal delay={0.16} className={cn("group", "md:mt-6")}>
             <Link to={furnitureService.to} className={linkClass}>
               <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-                <Image
-                  src={IMAGES.service_furniture}
-                  alt="Meble na wymiar — zabudowa z otwartymi półkami w salonie"
-                  className={imageClass}
-                  originWidth={1200}
-                  originHeight={1500} />
+                <Image src="https://media.base44.com/images/public/6ada23814ca191b088e6074c/e5f2be64d_773687026_1594516745703688_4087577785876447106_n.jpg"
+
+                alt="Meble na wymiar — zabudowa z otwartymi półkami w salonie"
+                className={imageClass}
+                originWidth={1200}
+                originHeight={1500} />
                 
                 <span className={numberClass}>{furnitureService.number}</span>
               </div>
