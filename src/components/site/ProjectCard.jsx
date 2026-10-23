@@ -28,7 +28,7 @@ export default function ProjectCard({ project, aspect = "aspect-[4/5]", onOpen, 
           <p className="mt-1 font-heading text-lg font-light text-ivory">{project.title}</p>
         </div>
       </div>
-      <div className="mt-4 flex items-baseline justify-between gap-4 border-b border-charcoal/10 p-[10px]">
+      <div className="mt-4 flex items-baseline justify-between gap-4 p-4">
         <div>
           <p className="text-[0.62rem] uppercase tracking-[0.2em] text-graphite/70">
             {project.category}
