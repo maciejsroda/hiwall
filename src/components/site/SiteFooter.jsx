@@ -110,7 +110,6 @@ export default function SiteFooter() {
                   </a>
                 </li>
               ) : null}
-              {isFilled(SITE.address) ? <li>{SITE.address}</li> : null}
               {isFilled(SITE.hours) ? <li>{SITE.hours}</li> : null}
               <li>
                 <Link
