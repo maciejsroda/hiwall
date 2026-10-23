@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { IMAGES } from "@/lib/content";
-import { SITE } from "@/lib/site-config";
+import { SITE, isFilled, waHref } from "@/lib/site-config";
 import ButtonLink from "../ButtonLink";
 
 export default function Hero() {
@@ -42,16 +41,21 @@ export default function Hero() {
 
           <motion.div {...fade(0.4)} className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <ButtonLink to="/kontakt">Zapytaj o wycenę</ButtonLink>
-            <Link
-              to="/realizacje"
-              className="group inline-flex items-center gap-3 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-charcoal">
-              
-              Poznaj nasze realizacje
-              <ArrowRight
-                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-                strokeWidth={1.5} />
-              
-            </Link>
+            {isFilled(SITE.phone) ? (
+              <a
+                href={waHref(SITE.phone)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-charcoal"
+              >
+                <MessageCircle className="h-4 w-4 text-oak" strokeWidth={1.5} />
+                WhatsApp {SITE.phone}
+                <ArrowRight
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  strokeWidth={1.5}
+                />
+              </a>
+            ) : null}
           </motion.div>
 
           <motion.dl

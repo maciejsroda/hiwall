@@ -4,7 +4,6 @@ const PAGES = [
   ["/", "1.0"],
   ["/kuchnie-na-wymiar", "0.9"],
   ["/meble-na-wymiar", "0.9"],
-  ["/realizacje", "0.8"],
   ["/o-firmie", "0.6"],
   ["/kontakt", "0.8"],
   ["/polityka-prywatnosci", "0.3"],

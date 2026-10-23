@@ -9,7 +9,7 @@ export const SITE = {
   city: "Wrocław",
   area: "Wrocław i okolice",
   url: "", // np. "https://hiwall.pl" – uzupełnić po podłączeniu domeny (canonical, sitemap)
-  phone: "",
+  phone: "+48 506 169 181",
   email: "meble@hiwall.pl",
   address: "",
   hours: "",
@@ -24,7 +24,6 @@ export const SITE = {
 export const NAV = [
   { label: "Kuchnie na wymiar", to: "/kuchnie-na-wymiar" },
   { label: "Meble na wymiar", to: "/meble-na-wymiar" },
-  { label: "Realizacje", to: "/realizacje" },
   { label: "O firmie", to: "/o-firmie" },
   { label: "Kontakt", to: "/kontakt" },
 ];
@@ -42,6 +41,12 @@ export function isFilled(value) {
 
 export function telHref(phone) {
   return `tel:${phone.replace(/[^\d+]/g, "")}`;
+}
+
+/** Link otwierający rozmowę na WhatsAppie (wa.me wymaga numeru bez spacji). */
+export function waHref(phone, message = "Dzień dobry! Chciałbym zapytać o wycenę mebli na wymiar.") {
+  const digits = String(phone || "").replace(/\D/g, "");
+  return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
 }
 
 export function canonical(path) {

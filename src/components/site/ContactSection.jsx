@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import { SITE, isFilled, telHref } from "@/lib/site-config";
+import { SITE, isFilled, telHref, waHref } from "@/lib/site-config";
 import InquiryForm from "./InquiryForm";
 import Reveal from "./Reveal";
 
@@ -21,10 +21,20 @@ export default function ContactSection({ eyebrow = "Kontakt", title = "Zacznijmy
 
           <div className="mt-10 space-y-5 border-t border-ivory/15 pt-8">
             {isFilled(SITE.phone) ? (
-              <a href={telHref(SITE.phone)} className="flex items-center gap-4 text-ivory/85 transition-colors hover:text-ivory">
-                <Phone className="h-4 w-4 text-oak" strokeWidth={1.5} />
-                <span className="text-[0.95rem] tracking-[0.04em]">{SITE.phone}</span>
-              </a>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+                <a href={telHref(SITE.phone)} className="flex items-center gap-4 text-ivory/85 transition-colors hover:text-ivory">
+                  <Phone className="h-4 w-4 text-oak" strokeWidth={1.5} />
+                  <span className="text-[0.95rem] tracking-[0.04em]">{SITE.phone}</span>
+                </a>
+                <a
+                  href={waHref(SITE.phone)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center border-b border-oak/40 pb-0.5 text-[0.66rem] font-semibold uppercase tracking-[0.16em] text-oak transition-colors hover:border-ivory hover:text-ivory"
+                >
+                  WhatsApp
+                </a>
+              </div>
             ) : null}
             {isFilled(SITE.email) ? (
               <a href={`mailto:${SITE.email}`} className="flex items-center gap-4 text-ivory/85 transition-colors hover:text-ivory">

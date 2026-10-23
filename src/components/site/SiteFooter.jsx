@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { SITE, NAV, isFilled, telHref } from "@/lib/site-config";
+import { SITE, NAV, isFilled, telHref, waHref } from "@/lib/site-config";
 import SocialIcon from "./SocialIcon";
 import Wordmark from "./Wordmark";
 
@@ -53,7 +53,7 @@ export default function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/realizacje" className="transition-colors hover:text-charcoal">
+                <Link to="/meble-na-wymiar" className="transition-colors hover:text-charcoal">
                   Szafy i zabudowy
                 </Link>
               </li>
@@ -63,11 +63,6 @@ export default function SiteFooter() {
           <nav aria-label="Informacje">
             <h2 className="eyebrow text-charcoal">Informacje</h2>
             <ul className="mt-5 space-y-3 text-sm text-graphite">
-              <li>
-                <Link to="/realizacje" className="transition-colors hover:text-charcoal">
-                  Realizacje
-                </Link>
-              </li>
               <li>
                 <Link to="/o-firmie" className="transition-colors hover:text-charcoal">
                   O firmie
@@ -93,6 +88,18 @@ export default function SiteFooter() {
                 <li>
                   <a href={telHref(SITE.phone)} className="transition-colors hover:text-charcoal">
                     {SITE.phone}
+                  </a>
+                </li>
+              ) : null}
+              {isFilled(SITE.phone) ? (
+                <li>
+                  <a
+                    href={waHref(SITE.phone)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors hover:text-charcoal"
+                  >
+                    WhatsApp
                   </a>
                 </li>
               ) : null}

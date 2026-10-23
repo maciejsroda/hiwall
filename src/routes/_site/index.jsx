@@ -2,18 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import Hero from "@/components/site/sections/Hero";
 import BrandIntro from "@/components/site/sections/BrandIntro";
 import ServicesSection from "@/components/site/sections/ServicesSection";
-import PortfolioSection from "@/components/site/sections/PortfolioSection";
 import ValuesSection from "@/components/site/sections/ValuesSection";
 import ProcessSection from "@/components/site/sections/ProcessSection";
 import StatementBanner from "@/components/site/sections/StatementBanner";
 import FaqSection from "@/components/site/sections/FaqSection";
 import ContactSection from "@/components/site/ContactSection";
 import StructuredData, { localBusinessSchema } from "@/components/site/StructuredData";
-import { HOME_FAQ, DEMO_PROJECTS } from "@/lib/content";
-import { listProjects } from "@/lib/server-fns";
+import { HOME_FAQ } from "@/lib/content";
 
 export const Route = createFileRoute("/_site/")({
-  loader: async () => ({ projects: await listProjects() }),
   head: () => ({
     meta: [
       { title: "HiWall – Kuchnie i Meble na Wymiar Wrocław" },
@@ -36,16 +33,12 @@ export const Route = createFileRoute("/_site/")({
 });
 
 function HomePage() {
-  const { projects } = Route.useLoaderData();
-  const list = projects.length ? projects : DEMO_PROJECTS;
-
   return (
     <>
       <StructuredData data={localBusinessSchema()} />
       <Hero />
       <BrandIntro />
       <ServicesSection />
-      <PortfolioSection projects={list} />
       <ValuesSection />
       <ProcessSection />
       <StatementBanner />

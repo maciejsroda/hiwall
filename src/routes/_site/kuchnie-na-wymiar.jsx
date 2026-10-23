@@ -140,7 +140,6 @@ function KitchensPage() {
       <CtaBand
         title="Twoja kuchnia zaczyna się od rozmowy."
         description="Napisz, jakiej zabudowy potrzebujesz i jakie masz pomieszczenie — ustalimy kolejne kroki."
-        secondary={{ label: "Zobacz realizacje", to: "/realizacje" }}
       />
     </>
   );

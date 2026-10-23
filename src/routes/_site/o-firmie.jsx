@@ -118,7 +118,6 @@ function AboutPage() {
       <CtaBand
         title="Porozmawiajmy o Twoim wnętrzu."
         description="Napisz kilka słów o pomieszczeniu i oczekiwaniach — resztę ustalimy podczas rozmowy."
-        secondary={{ label: "Zobacz realizacje", to: "/realizacje" }}
       />
     </>
   );

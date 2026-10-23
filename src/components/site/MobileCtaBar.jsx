@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
-import { SITE, isFilled, telHref } from "@/lib/site-config";
+import { ArrowRight, MessageCircle, Phone } from "lucide-react";
+import { SITE, isFilled, telHref, waHref } from "@/lib/site-config";
 
 export default function MobileCtaBar() {
   const [visible, setVisible] = useState(false);
@@ -27,21 +27,25 @@ export default function MobileCtaBar() {
           <ArrowRight className="h-3.5 w-3.5" strokeWidth={1.5} />
         </Link>
         {isFilled(SITE.phone) ? (
-          <a
-            href={telHref(SITE.phone)}
-            aria-label={`Zadzwoń: ${SITE.phone}`}
-            className="flex h-12 w-12 items-center justify-center border border-charcoal/25 text-charcoal"
-          >
-            <span className="text-[0.7rem] font-semibold uppercase">Tel</span>
-          </a>
-        ) : (
-          <Link
-            to="/realizacje"
-            className="flex h-12 items-center justify-center border border-charcoal/25 px-4 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-charcoal"
-          >
-            Realizacje
-          </Link>
-        )}
+          <>
+            <a
+              href={telHref(SITE.phone)}
+              aria-label={`Zadzwoń: ${SITE.phone}`}
+              className="flex h-12 w-12 items-center justify-center border border-charcoal/25 text-charcoal"
+            >
+              <Phone className="h-4 w-4" strokeWidth={1.5} />
+            </a>
+            <a
+              href={waHref(SITE.phone)}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Napisz na WhatsApp: ${SITE.phone}`}
+              className="flex h-12 w-12 items-center justify-center border border-charcoal/25 text-charcoal"
+            >
+              <MessageCircle className="h-4 w-4" strokeWidth={1.5} />
+            </a>
+          </>
+        ) : null}
       </div>
     </div>
   );

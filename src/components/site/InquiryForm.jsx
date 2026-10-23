@@ -3,7 +3,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { Check, Loader2, Paperclip, ArrowRight } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 import { submitInquiry } from "@/lib/server-fns";
-import { PROJECT_TYPES } from "@/lib/site-config";
+import { PROJECT_TYPES, SITE, isFilled, telHref } from "@/lib/site-config";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 
@@ -130,13 +130,15 @@ export default function InquiryForm() {
           kroki i szczegóły projektu.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-6">
-          <Link
-            to="/realizacje"
-            className="inline-flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-charcoal underline decoration-oak/70 underline-offset-[6px]"
-          >
-            Zobacz realizacje
-            <ArrowRight className="h-3.5 w-3.5" strokeWidth={1.5} />
-          </Link>
+          {isFilled(SITE.phone) ? (
+            <a
+              href={telHref(SITE.phone)}
+              className="inline-flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-charcoal underline decoration-oak/70 underline-offset-[6px]"
+            >
+              Zadzwoń: {SITE.phone}
+              <ArrowRight className="h-3.5 w-3.5" strokeWidth={1.5} />
+            </a>
+          ) : null}
           <button
             type="button"
             onClick={() => setStatus("idle")}

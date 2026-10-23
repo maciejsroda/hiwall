@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import PageHero from "@/components/site/PageHero";
 import ContactSection from "@/components/site/ContactSection";
-import { SITE, isFilled } from "@/lib/site-config";
+import { SITE, isFilled, telHref, waHref } from "@/lib/site-config";
 
 export const Route = createFileRoute("/_site/kontakt")({
   head: () => ({
@@ -37,7 +37,22 @@ function ContactPage() {
           {isFilled(SITE.phone) ? (
             <div className="border-t border-charcoal/10 pt-5">
               <h2 className="eyebrow text-charcoal">Telefon</h2>
-              <p className="mt-3 text-[0.95rem] leading-relaxed text-graphite">{SITE.phone}</p>
+              <p className="mt-3 text-[0.95rem] leading-relaxed text-graphite">
+                <a href={telHref(SITE.phone)} className="transition-colors hover:text-charcoal">
+                  {SITE.phone}
+                </a>
+                <span aria-hidden="true" className="mx-2 text-graphite/40">
+                  ·
+                </span>
+                <a
+                  href={waHref(SITE.phone)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-oak/70 underline-offset-4 transition-colors hover:text-charcoal"
+                >
+                  WhatsApp
+                </a>
+              </p>
             </div>
           ) : null}
           {isFilled(SITE.email) ? (

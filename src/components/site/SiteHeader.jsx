@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X } from "lucide-react";
+import { Menu, MessageCircle, X } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { NAV, SITE, isFilled, telHref } from "@/lib/site-config";
+import { NAV, SITE, isFilled, telHref, waHref } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 import Wordmark from "./Wordmark";
 import ButtonLink from "./ButtonLink";
@@ -78,12 +78,23 @@ export default function SiteHeader() {
 
           <div className="flex items-center gap-3">
             {isFilled(SITE.phone) ? (
-              <a
-                href={telHref(SITE.phone)}
-                className="hidden text-[0.8rem] font-medium text-charcoal transition-opacity hover:opacity-70 xl:block"
-              >
-                {SITE.phone}
-              </a>
+              <div className="hidden items-center gap-3 xl:flex">
+                <a
+                  href={telHref(SITE.phone)}
+                  className="text-[0.8rem] font-medium text-charcoal transition-opacity hover:opacity-70"
+                >
+                  {SITE.phone}
+                </a>
+                <a
+                  href={waHref(SITE.phone)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Napisz na WhatsApp"
+                  className="text-charcoal transition-opacity hover:opacity-70"
+                >
+                  <MessageCircle className="h-4 w-4" strokeWidth={1.5} />
+                </a>
+              </div>
             ) : null}
             <ButtonLink to="/kontakt" className="hidden h-11 px-6 text-[0.68rem] sm:inline-flex">
               Zapytaj o wycenę
@@ -149,12 +160,22 @@ export default function SiteHeader() {
                 Zapytaj o wycenę
               </ButtonLink>
               {isFilled(SITE.phone) ? (
-                <a
-                  href={telHref(SITE.phone)}
-                  className="block text-center text-sm tracking-[0.06em] text-graphite"
-                >
-                  {SITE.phone}
-                </a>
+                <div className="space-y-3">
+                  <a
+                    href={telHref(SITE.phone)}
+                    className="block text-center text-sm tracking-[0.06em] text-graphite"
+                  >
+                    {SITE.phone}
+                  </a>
+                  <a
+                    href={waHref(SITE.phone)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-charcoal underline decoration-oak/70 underline-offset-4"
+                  >
+                    WhatsApp
+                  </a>
+                </div>
               ) : (
                 <p className="text-center text-[0.7rem] uppercase tracking-[0.2em] text-graphite/70">
                   {SITE.area}
