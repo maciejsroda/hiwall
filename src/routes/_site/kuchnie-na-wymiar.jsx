@@ -89,10 +89,10 @@ function KitchensPage() {
               <div className="aspect-[5/4] overflow-hidden bg-sand">
                 <Image
                   src={IMAGES.kuchnie_story}
-                  alt="Kuchnia na wymiar w układzie L z dębowymi frontami i czarnymi uchwytami"
+                  alt="Kuchnia na wymiar w układzie L z matowymi frontami, drewnianym blatem i kamienną okładziną"
                   className="h-full w-full object-cover"
-                  originWidth={1200}
-                  originHeight={1600}
+                  originWidth={1452}
+                  originHeight={1452}
                 />
               </div>
               <figcaption className="mt-4 text-[0.68rem] uppercase tracking-[0.18em] text-graphite/70">
