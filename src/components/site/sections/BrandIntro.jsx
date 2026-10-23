@@ -36,17 +36,17 @@ export default function BrandIntro() {
                   alt="Detal meblowy — precyzyjne połączenie frontów w okleinie dębowej"
                   className="h-full w-full object-cover"
                   originWidth={1400}
-                  originHeight={1050}
-                />
+                  originHeight={1050} />
+                
               </div>
               <figcaption className="mt-4 flex items-center justify-between text-[0.68rem] uppercase tracking-[0.18em] text-graphite/70">
                 <span>Precyzja wykonania</span>
-                <span aria-hidden="true">01 / 06</span>
+                <span aria-hidden="true" className="hidden">01 / 06</span>
               </figcaption>
             </figure>
           </Reveal>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
