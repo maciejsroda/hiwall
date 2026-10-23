@@ -33,7 +33,7 @@ export default function BrandIntro() {
               <div className="relative aspect-[4/3] overflow-hidden bg-sand">
                 <Image
                   src={IMAGES.home_brand}
-                  alt="Detal meblowy — precyzyjne połączenie frontów w okleinie dębowej"
+                  alt="Front meblowy w terakocie z mosiężnym uchwytem"
                   className="h-full w-full object-cover"
                   originWidth={1400}
                   originHeight={1050} />

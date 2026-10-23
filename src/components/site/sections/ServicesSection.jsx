@@ -34,7 +34,7 @@ export default function ServicesSection() {
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
               <Image
                 src={IMAGES.service_kitchen}
-                alt="Kuchnia na wymiar z zabudową do sufitu i kamiennym blatem"
+                alt="Kuchnia na wymiar z otwartymi dębowymi półkami i zabudowanym piekarnikiem"
                 className={imageClass}
                 originWidth={1200}
                 originHeight={1500}
@@ -49,7 +49,7 @@ export default function ServicesSection() {
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
               <Image
                 src={IMAGES.service_wardrobe}
-                alt="Szafa na wymiar z frontami w okleinie dębowej w sypialni"
+                alt="Garderoba na wymiar z białą zabudową do sufitu"
                 className={imageClass}
                 originWidth={1200}
                 originHeight={1500}
@@ -64,7 +64,7 @@ export default function ServicesSection() {
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
               <Image
                 src={IMAGES.service_furniture}
-                alt="Meble na wymiar — zabudowa z otwartymi półkami w salonie"
+                alt="Meble na wymiar — łóżko piętrowe z biurkiem i szafą"
                 className={imageClass}
                 originWidth={1200}
                 originHeight={1500}

@@ -8,53 +8,53 @@ export const IMAGES = {
 
   // Strona główna
   home_hero:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/ba16f2471_792090277_1614687347019961_4250369707302175378_n.jpg",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/026caaf82_848933567_1650287800126582_433413749947085131_n.jpg",
   home_brand:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/c61af5d02_generated_80dd20bf.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/442c3a7d1_697095009_1513825950439435_3990732475043632697_n.jpg",
   service_kitchen:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/6112f8b26_generated_c423a7b6.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/17d0bd563_655127723_1469270118228352_4457180546474638118_n.jpg",
   service_wardrobe:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/0b381dcc5_generated_4357670a.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/fb924e034_773580838_1594556379033058_5476347865145775015_n.jpg",
   service_furniture:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/cb4a4bc4a_generated_1c0059e2.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/374abf11b_573052051_1362494178905947_7016794148815359697_n1.jpg",
   home_statement:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/40eb676d9_generated_cb0706f7.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/1307dc55e_73286c9b-0afe-4a94-8a0e-cc191d5ebac6.jpeg",
 
   // Kuchnie na wymiar
   kuchnie_hero:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/6112f8b26_generated_c423a7b6.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/17d0bd563_655127723_1469270118228352_4457180546474638118_n.jpg",
   kuchnie_story:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/22427b18d_generated_090da19e.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/026caaf82_848933567_1650287800126582_433413749947085131_n.jpg",
 
   // Meble na wymiar
   meble_hero:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/0b381dcc5_generated_4357670a.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/1307dc55e_73286c9b-0afe-4a94-8a0e-cc191d5ebac6.jpeg",
   meble_story:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/db4a58cd2_generated_2818944c.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/275eb1db1_772495449_1594548362367193_1683082271444441166_n.jpg",
 
   // Realizacje
   realizacje_hero:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/40eb676d9_generated_cb0706f7.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/623cfa15b_697112549_1513825953772768_7416641211726081607_n.jpg",
 
   // O firmie
   ofirmie_hero:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/7d7e79454_generated_c234e517.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/326a30c99_574345839_1362488268906538_5080107212770132872_n2.jpg",
   ofirmie_story:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/c61af5d02_generated_80dd20bf.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/06e87a0ce_772889348_1594542979034398_2475049799088168571_n.jpg",
 
-  // Portfolio demonstracyjne (używane, gdy baza realizacji jest pusta)
+  // Portfolio (używane, gdy baza realizacji jest pusta)
   project_1:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/22427b18d_generated_090da19e.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/026caaf82_848933567_1650287800126582_433413749947085131_n.jpg",
   project_2:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/f9ad19377_generated_cf26e49d.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/fb924e034_773580838_1594556379033058_5476347865145775015_n.jpg",
   project_3:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/96dc64860_generated_63cd47b7.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/1307dc55e_73286c9b-0afe-4a94-8a0e-cc191d5ebac6.jpeg",
   project_4:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/7d7e79454_generated_c234e517.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/17d0bd563_655127723_1469270118228352_4457180546474638118_n.jpg",
   project_5:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/6112f8b26_generated_c423a7b6.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/326a30c99_574345839_1362488268906538_5080107212770132872_n2.jpg",
   project_6:
-    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/54d716454_generated_60f67ba1.png",
+    "https://media.base44.com/images/public/6ada23814ca191b088e6074c/275eb1db1_772495449_1594548362367193_1683082271444441166_n.jpg",
 };
 
 export const SERVICES = [
@@ -209,18 +209,18 @@ export const FURNITURE_FAQ = [
 ];
 
 /**
- * Materiały demonstracyjne. Zdjęcia i opisy są tymczasowe — zostaną zastąpione
- * rzeczywistymi realizacjami HiWall (bez zmian w kodzie strony).
+ * Realizacje HiWall. Ten zestaw jest pokazywany wtedy, gdy baza realizacji
+ * jest pusta — na co dzień galeria korzysta z danych z panelu.
  */
 export const DEMO_PROJECTS = [
   {
     id: "demo-1",
-    title: "Kuchnia z wyspą w naturalnym dębie",
+    title: "Kuchnia w dębie i matowej bieli",
     category: "Kuchnie",
-    description: "Zabudowa do sufitu, kamienny blat i spokojna linia frontów.",
+    description: "Układ L z dębowymi frontami dolnymi, czarnymi uchwytami i podświetleniem blatu.",
     location: "Wrocław",
     image: IMAGES.project_1,
-    alt: "Demonstracyjne zdjęcie kuchni z wyspą w naturalnym dębie",
+    alt: "Kuchnia na wymiar w dębie i matowej bieli z czarnymi uchwytami",
     featured: true,
     order: 1,
   },
@@ -228,54 +228,54 @@ export const DEMO_PROJECTS = [
     id: "demo-2",
     title: "Garderoba z zabudową do sufitu",
     category: "Szafy i zabudowy",
-    description: "Wnętrze uporządkowane pod konkretny sposób przechowywania.",
+    description: "Biała zabudowa z szufladami, drążkami i narożnym segmentem z półkami.",
     location: "Wrocław",
     image: IMAGES.project_2,
-    alt: "Demonstracyjne zdjęcie garderoby z zabudową do sufitu",
+    alt: "Garderoba na wymiar z białą zabudową do sufitu i czarnymi uchwytami",
     featured: true,
     order: 2,
   },
   {
     id: "demo-3",
-    title: "Jadalnia z zabudową na wymiar",
+    title: "Ściana meblowa z podświetlaną niszą",
     category: "Meble na wymiar",
-    description: "Kredens i półki dopasowane do proporcji pomieszczenia.",
+    description: "Zabudowa od podłogi do sufitu z ukrytym oświetleniem niszy i szufladami.",
     location: "Wrocław",
     image: IMAGES.project_3,
-    alt: "Demonstracyjne zdjęcie jadalni z zabudową na wymiar",
+    alt: "Zabudowa ściany w salonie z podświetlaną niszą i szufladami",
     featured: true,
     order: 3,
   },
   {
     id: "demo-4",
-    title: "Zabudowa przedpokoju z siedziskiem",
-    category: "Szafy i zabudowy",
-    description: "Miejsce na kurtki, obuwie i codzienne drobiazgi.",
+    title: "Kuchnia z otwartą półką i zabudową AGD",
+    category: "Kuchnie",
+    description: "Dębowe półki, słup z zabudowanym piekarnikiem i biała strefa robocza.",
     location: "Wrocław",
     image: IMAGES.project_4,
-    alt: "Demonstracyjne zdjęcie zabudowy przedpokoju z siedziskiem",
+    alt: "Kuchnia na wymiar z otwartymi dębowymi półkami i zabudowanym piekarnikiem",
     featured: false,
     order: 4,
   },
   {
     id: "demo-5",
-    title: "Kuchnia w ciepłych, matowych frontach",
-    category: "Kuchnie",
-    description: "Otwarta nisza w dębie i stonowana kolorystyka.",
+    title: "Szafa w sypialni z otwartymi półkami",
+    category: "Szafy i zabudowy",
+    description: "Zamknięta zabudowa z szufladami i otwartymi regałami po bokach.",
     location: "Wrocław",
     image: IMAGES.project_5,
-    alt: "Demonstracyjne zdjęcie kuchni w ciepłych matowych frontach",
+    alt: "Szafa na wymiar z otwartymi półkami w sypialni",
     featured: false,
     order: 5,
   },
   {
     id: "demo-6",
-    title: "Kącik do pracy w zabudowie",
+    title: "Meble łazienkowe na wymiar",
     category: "Meble na wymiar",
-    description: "Biurko i półki wbudowane w ścianę bez utraty przestrzeni.",
+    description: "Szafki z dębowymi obrzeżami, otwarta nisza i zabudowa słupa.",
     location: "Wrocław",
     image: IMAGES.project_6,
-    alt: "Demonstracyjne zdjęcie kącika do pracy w zabudowie",
+    alt: "Meble łazienkowe na wymiar z dębowymi obrzeżami i otwartą półką",
     featured: false,
     order: 6,
   },

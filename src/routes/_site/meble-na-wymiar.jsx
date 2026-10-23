@@ -67,7 +67,7 @@ function FurniturePage() {
         title="Meble na wymiar we Wrocławiu"
         description="Szafy, garderoby, zabudowy i meble, które powstają pod wymiary konkretnego wnętrza — tak, aby przestrzeń była uporządkowana i spójna."
         image={IMAGES.meble_hero}
-        imageAlt="Szafa na wymiar z frontami w okleinie dębowej, zabudowana do sufitu"
+        imageAlt="Zabudowa meblowa na wymiar w salonie z podświetlaną niszą"
       />
 
       <section className="bg-ivory py-20 lg:py-28">
@@ -128,14 +128,14 @@ function FurniturePage() {
               <div className="aspect-[4/3] overflow-hidden bg-sand">
                 <Image
                   src={IMAGES.meble_story}
-                  alt="Detale warsztatowe — próbki okleiny dębowej i narzędzia stolarskie"
+                  alt="Meble łazienkowe na wymiar z dębowymi obrzeżami i otwartą półką"
                   className="h-full w-full object-cover"
                   originWidth={1200}
                   originHeight={1600}
                 />
               </div>
               <figcaption className="mt-4 text-[0.68rem] uppercase tracking-[0.18em] text-graphite/70">
-                Materiał demonstracyjny — zdjęcie do podmiany
+                Realizacja HiWall
               </figcaption>
             </figure>
           </Reveal>

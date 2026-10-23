@@ -25,10 +25,6 @@ export default function PortfolioSection({ projects = DEMO_PROJECTS }) {
           <ProjectGrid projects={projects} featured />
         </Reveal>
 
-        <p className="mt-8 max-w-2xl text-[0.72rem] leading-relaxed tracking-[0.02em] text-graphite/60">
-          Zdjęcia prezentowane w galerii mają charakter demonstracyjny. Galeria
-          zostanie uzupełniona fotografiami rzeczywistych realizacji HiWall.
-        </p>
       </div>
     </section>
   );

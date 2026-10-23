@@ -62,7 +62,7 @@ function KitchensPage() {
         title="Kuchnie na wymiar we Wrocławiu"
         description="Projektujemy kuchnie dopasowane do pomieszczenia, sposobu gotowania i charakteru wnętrza — od układu, przez materiały, po ostatni detal wykończenia."
         image={IMAGES.kuchnie_hero}
-        imageAlt="Kuchnia na wymiar z zabudową do sufitu, kamiennym blatem i dębową niszą"
+        imageAlt="Kuchnia na wymiar z otwartymi półkami w dębie i zabudowanym piekarnikiem"
       />
 
       <section className="bg-ivory py-20 lg:py-28">
@@ -89,14 +89,14 @@ function KitchensPage() {
               <div className="aspect-[5/4] overflow-hidden bg-sand">
                 <Image
                   src={IMAGES.kuchnie_story}
-                  alt="Wyspa kuchenna z kamiennym blatem i dębową zabudową"
+                  alt="Kuchnia na wymiar w układzie L z dębowymi frontami i czarnymi uchwytami"
                   className="h-full w-full object-cover"
                   originWidth={1200}
                   originHeight={1600}
                 />
               </div>
               <figcaption className="mt-4 text-[0.68rem] uppercase tracking-[0.18em] text-graphite/70">
-                Materiał demonstracyjny — zdjęcie do podmiany na realizację HiWall
+                Realizacja HiWall
               </figcaption>
             </figure>
           </Reveal>

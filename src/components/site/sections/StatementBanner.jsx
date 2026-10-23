@@ -9,7 +9,7 @@ export default function StatementBanner() {
       <div className="absolute inset-0">
         <Image
           src={IMAGES.home_statement}
-          alt="Wnętrze dzienne z zabudową meblową na wymiar w naturalnym dębie"
+          alt="Zabudowa meblowa na wymiar w salonie z podświetlaną niszą"
           className="h-full w-full object-cover"
           originWidth={2000}
           originHeight={860}

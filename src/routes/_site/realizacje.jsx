@@ -44,7 +44,7 @@ function ProjectsPage() {
         title="Realizacje, które mówią same za siebie."
         description="Poznaj przykłady rozwiązań, w których estetyka spotyka się z funkcjonalnością."
         image={IMAGES.realizacje_hero}
-        imageAlt="Wnętrze z zabudową meblową na wymiar w naturalnym dębie"
+        imageAlt="Zabudowa garderoby na wymiar z mosiężnymi uchwytami i podświetleniem"
       />
 
       <section className="bg-ivory py-16 lg:py-24">
@@ -102,10 +102,6 @@ function ProjectsPage() {
             </p>
           )}
 
-          <p className="mt-10 max-w-2xl text-[0.72rem] leading-relaxed tracking-[0.02em] text-graphite/60">
-            Zdjęcia w galerii mają charakter demonstracyjny. Zostaną zastąpione
-            fotografiami rzeczywistych realizacji HiWall.
-          </p>
         </div>
       </section>
 

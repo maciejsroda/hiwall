@@ -78,14 +78,14 @@ export default function Hero() {
             
             <Image src={IMAGES.home_hero}
 
-            alt="Nowoczesna kuchnia na wymiar z dębową zabudową i kamiennym blatem wyspy"
+            alt="Kuchnia na wymiar w dębie i matowej bieli z czarnymi uchwytami"
             className="h-full w-full object-cover"
             originWidth={1536}
             originHeight={1024} />
             
           </motion.div>
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-charcoal/45 to-transparent" />
-          <p className="absolute bottom-7 left-6 text-[0.62rem] uppercase tracking-[0.24em] text-ivory/90 md:left-10 lg:left-8">dąb · BIEL · matowe akrylowe fronty
+          <p className="absolute bottom-7 left-6 text-[0.62rem] uppercase tracking-[0.24em] text-ivory/90 md:left-10 lg:left-8">dąb · BIEL · czarne uchwyty
 
           </p>
         </div>
